@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project title="SpamIsSpam Mailcatch API" version="2.8.5">
+  <partials/>
+  <file path="SpamIsSpamMailcatch.php" generated-path="SpamIsSpamMailcatch.html" hash="486d03924652af8b8113724e81d91ab0" package="SpamIsSpamMailcatch">
+    <docblock line="0">
+      <description>SpamIsSpam Mailcatch Support Library - mailcatch.spamisspam.com</description>
+      <long-description></long-description>
+      <tag name="copyright" line="0" description="2017, Brian Tafoya."/>
+      <tag name="package" line="0" description="SpamIsSpamMailcatch"/>
+      <tag name="author" line="0" description="Brian Tafoya" link="mailto:brian@spamisspam.com"/>
+      <tag name="version" line="0" description="1.0"/>
+      <tag name="license" line="0" description="MIT" link="http://opensource.org/licenses/MIT"/>
+      <tag name="license" line="0" description="The MIT License" link="https://opensource.org/licenses/MIT"/>
+      <tag name="category" line="0" description="SpamIsSpamMailcatch_Support_Library"/>
+      <tag name="link" line="0" description="SpamIsSpam Mailcatch&#10;&#10;Copyright (c) 2017, Brian Tafoya&#10;&#10;Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:&#10;&#10;The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.&#10;&#10;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE." link="http://mailcatch.spamisspam.com"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="" line="28" package="SpamIsSpam\Mailcatch">
+      <extends/>
+      <name>SpamIsSpamMailcatch</name>
+      <full_name>\SpamIsSpamMailcatch</full_name>
+      <docblock line="28">
+        <description>Class SpamIsSpamMailcatch</description>
+        <long-description></long-description>
+        <tag name="package" line="28" description="SpamIsSpam\Mailcatch"/>
+      </docblock>
+      <property static="true" visibility="public" namespace="" line="33" package="SpamIsSpam\Mailcatch">
+        <name>$uuid</name>
+        <full_name>\SpamIsSpamMailcatch::uuid</full_name>
+        <default></default>
+        <docblock line="33">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="33" description="&lt;p&gt;Unique ID last generated.&lt;/p&gt;" type="string" variable="$uuid">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="46" package="SpamIsSpam\Mailcatch">
+        <name>uuid</name>
+        <full_name>\SpamIsSpamMailcatch::uuid()</full_name>
+        <docblock line="46">
+          <description>uuid().</description>
+          <long-description>Generate a unique 32 character key.</long-description>
+          <tag name="method" line="46" description="" method_name="uuid"/>
+          <tag name="access" line="46" description="public"/>
+          <tag name="return" line="46" description="" type="string">
+            <type>string</type>
+          </tag>
+          <tag name="author" line="46" description="Brian Tafoya" link="mailto:brian@spamisspam.com"/>
+          <tag name="version" line="46" description="1.0"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="63" package="SpamIsSpam\Mailcatch">
+        <name>getMessageResult</name>
+        <full_name>\SpamIsSpamMailcatch::getMessageResult()</full_name>
+        <docblock line="63">
+          <description>getMessageResult($uuid).</description>
+          <long-description>Get message results for a given UUID.</long-description>
+          <tag name="method" line="63" description="" method_name="getMessageResult"/>
+          <tag name="author" line="63" description="Brian Tafoya" link="mailto:brian@spamisspam.com"/>
+          <tag name="version" line="63" description="1.0"/>
+          <tag name="access" line="63" description="public"/>
+          <tag name="param" line="63" description="&lt;p&gt;Unique 32 character identifier.&lt;/p&gt;" type="String" variable="$uuid">
+            <type>String</type>
+          </tag>
+          <tag name="return" line="63" description="" type="mixed">
+            <type>mixed</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$uuid</name>
+          <default></default>
+          <type>String</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="" line="87" package="SpamIsSpam\Mailcatch">
+        <name>sendSMTPMessage</name>
+        <full_name>\SpamIsSpamMailcatch::sendSMTPMessage()</full_name>
+        <docblock line="87">
+          <description>sendSMTPMessage($uuid, $from_email, $from_name).</description>
+          <long-description>Send an SMTP message directly to mailcatch.spamisspam.com.</long-description>
+          <tag name="method" line="87" description="" method_name="sendSMTPMessage"/>
+          <tag name="author" line="87" description="Brian Tafoya" link="mailto:brian@spamisspam.com"/>
+          <tag name="version" line="87" description="1.0"/>
+          <tag name="access" line="87" description="public"/>
+          <tag name="param" line="87" description="&lt;p&gt;Unique 32 character identifier.&lt;/p&gt;" type="String" variable="$uuid">
+            <type>String</type>
+          </tag>
+          <tag name="param" line="87" description="&lt;p&gt;Sender Email&lt;/p&gt;" type="String" variable="$fromEmail">
+            <type>String</type>
+          </tag>
+          <tag name="param" line="87" description="&lt;p&gt;Sender Name&lt;/p&gt;" type="String" variable="$fromName">
+            <type>String</type>
+          </tag>
+          <tag name="return" line="87" description="" type="boolean">
+            <type>boolean</type>
+          </tag>
+          <tag name="throws" line="87" description="Throws phpmailerException on mailer issues." type="\phpmailerException">
+            <type>\phpmailerException</type>
+          </tag>
+          <tag name="throws" line="87" description="Throws Exception on code issues." type="\Exception">
+            <type>\Exception</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$uuid</name>
+          <default></default>
+          <type>String</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$fromEmail</name>
+          <default></default>
+          <type>String</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$fromName</name>
+          <default></default>
+          <type>String</type>
+        </argument>
+      </method>
+    </class>
+    <source>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</source>
+  </file>
+  <package name="SpamIsSpamMailcatch" full_name="SpamIsSpamMailcatch"/>
+  <package name="SpamIsSpam" full_name="SpamIsSpam">
+    <package name="Mailcatch" full_name="SpamIsSpam\Mailcatch"/>
+  </package>
+  <package name="global" full_name="global"/>
+  <namespace name="global" full_name="global"/>
+  <deprecated count="0"/>
+</project>

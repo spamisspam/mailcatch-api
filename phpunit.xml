@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpunit bootstrap="bootstrap.php">
+    <testsuites>
+        <testsuite name="OwpUsers">
+            <file>tests/SpamIsSpamMailcatch_test.php</file>
+        </testsuite>
+    </testsuites>
+    <logging>
+        <log type="junit" target="./logs/logfile.xml" logIncompleteSkipped="false"/>
+        <log type="testdox-text" target="./logs/testdox.txt"/>
+    </logging>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
