@@ -4,7 +4,7 @@
 [![GitHub Tag](https://img.shields.io/github/tag/spamisspam/mailcatch-api.svg?style=flat-square)](https://github.com/spamisspam/mailcatch-api)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 [![Packagist](https://img.shields.io/packagist/dt/spamisspam/mailcatch-api.svg?maxAge=86400&style=flat-square)](https://packagist.org/packages/spamisspam/mailcatch-api)
-[![Build Status](https://travis-ci.org/spamisspam/mailcatch-api.png?branch=master&style=flat-square)](https://travis-ci.org/spamisspam/mailcatch-api)
+[![Build Status](https://travis-ci.org/spamisspam/mailcatch-api.svg?branch=master)](https://travis-ci.org/spamisspam/mailcatch-api)
 
 ### This is a support library for the Spam Is Spam Mail Catch platform.
 
