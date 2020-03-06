@@ -20,7 +20,7 @@
         "ext-openssl": "*",
         "ext-curl": "*",
         "guzzlehttp/guzzle": "~6.0",
-        "phpmailer/phpmailer": "^5.2",
+        "phpmailer/phpmailer": ">=5.2.6",
         "squeaky-minds/squeaky-minds-php-helper": "^1.2.0"
     },
     "autoload": {
