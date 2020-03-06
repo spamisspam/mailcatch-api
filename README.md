@@ -1,4 +1,4 @@
-# SmapIsSpam Mail Catch Support Library
+# SpamIsSpam Mail Catch Support Library
 
 [![Author](https://img.shields.io/badge/author-btafoya@briantafoya.com-blue.svg?style=flat-square)](https://www.briantafoya.com)
 [![GitHub Tag](https://img.shields.io/github/tag/spamisspam/mailcatch-api.svg?style=flat-square)](https://github.com/spamisspam/mailcatch-api)
